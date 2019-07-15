@@ -71,7 +71,7 @@ class ExpenseServiceTest {
         Throwable exception  = Assertions.assertThrows(UnexpectedProjectTypeException.class, () -> {
             ExpenseService.getExpenseCodeByProjectTypeAndName(project);
         });
-//        assertEquals("Unrecognized parking ticket.",exception.getMessage());
+        assertEquals("You enter invalid project type",exception.getMessage());
 
 
 
